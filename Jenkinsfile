@@ -11,7 +11,7 @@ pipeline {
 
         stage('error') {
           steps {
-            sh '''git --version
+            sh '''java -version
 '''
           }
         }
