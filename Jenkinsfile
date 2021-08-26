@@ -9,7 +9,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             sh '''mvn --version
 git --version
