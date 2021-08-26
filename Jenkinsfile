@@ -11,8 +11,7 @@ pipeline {
 
         stage('error') {
           steps {
-            sh '''mvn --version
-git --version
+            sh '''git --version
 '''
           }
         }
