@@ -2,20 +2,8 @@ pipeline {
   agent any
   stages {
     stage('Check for pom') {
-      parallel {
-        stage('Check for pom') {
-          steps {
-            fileExists 'pom.xml'
-          }
-        }
-
-        stage('error') {
-          steps {
-            sh '''java -version
-'''
-          }
-        }
-
+      steps {
+        fileExists 'pom.xml'
       }
     }
 
