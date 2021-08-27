@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Log Tool Version') {
       steps {
-        sh 'git --version'
+        sh 'java -version'
       }
     }
 
